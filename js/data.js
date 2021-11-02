@@ -1,5 +1,5 @@
 var managers = [
-	{owner:'Jake Beddinghaus', team:''},
+	{owner:'Jake Bedinghaus', team:''},
 	{owner:'Ricky Brayton', team:''},
 	{owner:'Derek Choops', team:''},
 	{owner:'Rory Deken', team:''},
