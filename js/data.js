@@ -1,5 +1,5 @@
 var managers = [
-	{owner: 'Sam Martinez', team: ''},
+	{owner: 'Sam Martinez', team: 'TB'},
 	{owner: 'Evan Guckenberger', team: ''},
 	{owner: 'Winston Gaynor', team: ''},
 	{owner: 'Derek Choops', team: ''},
