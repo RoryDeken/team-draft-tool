@@ -1,2 +1,2 @@
-# team-draft-tool
-Just a basic webpage
+# Draft Tool
+Use this for a team-based offline draft.
