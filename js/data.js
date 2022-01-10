@@ -4,7 +4,7 @@ var managers = [
 	{owner: 'Luke Huffer', team: 'KC'},
 	{owner: 'Rory Deken', team: 'ARI'},
 	{owner: 'KC Johnson', team: 'CIN'},
-	{owner: 'Sam Martinez', team: ''},
+	{owner: 'Sam Martinez', team: 'TEN'},
 	{owner: 'Derek Choops', team: ''},
 	{owner: 'Jake Bedinghaus', team: ''},
 	{owner: 'Aidan Guckenberger', team: ''},
