@@ -7,7 +7,7 @@ var managers = [
 	{owner: 'Sam Martinez', team: 'TEN'},
 	{owner: 'Derek Choops', team: 'BUF'},
 	{owner: 'Jake Bedinghaus', team: 'LA'},
-	{owner: 'Aidan Guckenberger', team: ''},
+	{owner: 'Aidan Guckenberger', team: 'NE'},
 	{owner: 'Winston Gaynor', team: ''}
 ];
 
