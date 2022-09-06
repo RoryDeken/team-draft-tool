@@ -2,7 +2,7 @@ var managers = [
 	{owner: 'Aidan Guckenberger', team: 'CIN'},
 	{owner: 'Milan Puchavich', team: 'LAC'},
 	{owner: 'Derek Choops', team: 'BUF'},
-	{owner: 'Ricky Brayton', team: ''},
+	{owner: 'Ricky Brayton', team: 'TB'},
 	{owner: 'Winston Gaynor', team: ''},
 	{owner: 'Sam Martinez', team: ''},
 	{owner: 'Rory Deken', team: ''},
