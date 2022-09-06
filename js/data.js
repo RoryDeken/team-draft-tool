@@ -1,16 +1,16 @@
 var managers = [
-	{owner: 'Jake Bedinghaus', team: ''},
-	{owner: 'Ricky Brayton', team: ''},
-	{owner: 'Derek Choops', team: ''},
-	{owner: 'Rory Deken', team: ''},
-	{owner: 'Winston Gaynor', team: ''},
 	{owner: 'Aidan Guckenberger', team: ''},
-	{owner: 'Evan Guckenberger', team: ''},
-	{owner: 'Luke Huffer', team: ''},
-	{owner: 'KC Johnson', team: ''},
-	{owner: 'Michael Kish', team: ''},
+	{owner: 'Milan Puchavich', team: ''},
+	{owner: 'Derek Choops', team: ''},
+	{owner: 'Ricky Brayton', team: ''},
+	{owner: 'Winston Gaynor', team: ''},
 	{owner: 'Sam Martinez', team: ''},
-	{owner: 'Milan Puchavich', team: ''}	
+	{owner: 'Rory Deken', team: ''},
+	{owner: 'Luke Huffer', team: ''},
+	{owner: 'Jake Bedinghaus', team: ''},
+	{owner: 'Michael Kish', team: ''},
+	{owner: 'KC Johnson', team: ''},
+	{owner: 'Evan Guckenberger', team: ''}
 ];
 
 var teams = [
