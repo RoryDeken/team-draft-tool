@@ -9,7 +9,7 @@ managers = [
 	{owner: 'Luke Huffer', team: 'DEN'},
 	{owner: 'Jake Bedinghaus', team: 'LA'},
 	{owner: 'Michael Kish', team: 'MIN'},
-	{owner: 'KC Johnson', team: ''},
+	{owner: 'KC Johnson', team: 'DAL'},
 	{owner: 'Evan Guckenberger', team: ''}
 ];
 
