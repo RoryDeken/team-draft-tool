@@ -8,7 +8,7 @@
 	{owner: 'Rory Deken', team: 'PHI'},
 	{owner: 'Luke Huffer', team: 'DEN'},
 	{owner: 'Jake Bedinghaus', team: 'LA'},
-	{owner: 'Michael Kish', team: ''},
+	{owner: 'Michael Kish', team: 'MIN'},
 	{owner: 'KC Johnson', team: ''},
 	{owner: 'Evan Guckenberger', team: ''}
 ];
