@@ -1,4 +1,4 @@
-3-5pmvar managers = [
+managers = [
 	{owner: 'Aidan Guckenberger', team: 'CIN'},
 	{owner: 'Milan Puchavich', team: 'LAC'},
 	{owner: 'Derek Choops', team: 'BUF'},
