@@ -1,4 +1,4 @@
-var managers = [
+3-5pmvar managers = [
 	{owner: 'Aidan Guckenberger', team: 'CIN'},
 	{owner: 'Milan Puchavich', team: 'LAC'},
 	{owner: 'Derek Choops', team: 'BUF'},
@@ -7,7 +7,7 @@ var managers = [
 	{owner: 'Sam Martinez', team: 'GB'},
 	{owner: 'Rory Deken', team: 'PHI'},
 	{owner: 'Luke Huffer', team: 'DEN'},
-	{owner: 'Jake Bedinghaus', team: ''},
+	{owner: 'Jake Bedinghaus', team: 'LA'},
 	{owner: 'Michael Kish', team: ''},
 	{owner: 'KC Johnson', team: ''},
 	{owner: 'Evan Guckenberger', team: ''}
