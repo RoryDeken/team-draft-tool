@@ -3,6 +3,8 @@
 
 let order = document.getElementById("draft-order");
 let teamList = document.getElementById("teams");
+let isPlayoffs = true;
+
 order.innerHTML = '';
 teamList.innerHTML = '';
 
