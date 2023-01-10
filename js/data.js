@@ -3,7 +3,7 @@ managers = [
 	{owner: 'Derek Choops', team: 'BUF'},
 	{owner: 'Ricky Brayton', team: 'PHI'},
 	{owner: 'Rory Deken', team: 'LAC'},
-	{owner: 'KC Johnson', team: ''},
+	{owner: 'KC Johnson', team: 'CIN'},
 	{owner: 'Winston Gaynor', team: ''},
 	{owner: 'Aidan Guckenberger', team: ''},
 	{owner: 'Evan Guckenberger', team: ''},
