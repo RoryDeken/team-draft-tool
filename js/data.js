@@ -13,6 +13,24 @@ managers = [
 	{owner: 'Evan Guckenberger', team: ''}
 ];
 
+var playoffTeams = [
+	
+	{name: 'Baltimore Ravens', abrev: "BAL"},
+	{name: 'Buffalo Bills', abrev: "BUF"},
+	{name: 'Cincinnati Bengals', abrev: "CIN"},
+	{name: 'Dallas Cowboys', abrev: "DAL"},
+	{name: 'Jacksonville Jaguars', abrev: "JAX"},
+	{name: 'Kansas City Chiefs', abrev: "KC"},
+	{name: 'Los Angeles Chargers', abrev: "LAC"},
+	{name: 'Miami Dolphins', abrev: "MIA"},
+	{name: 'Minnesota Vikings', abrev: "MIN"},
+	{name: 'New York Giants', abrev: "NYG"},
+	{name: 'Philadelphia Eagles', abrev: "PHI"},
+	{name: 'Seattle Seahawks', abrev: "SEA"},
+	{name: 'San Francisco 49ers', abrev: "SF"},
+	{name: 'Tampa Bay Buccaneers', abrev: "TB"},
+];
+
 var teams = [
 	{name: 'Arizona Cardinals', abrev: "ARI"},
 	{name: 'Atlanta Falcons', abrev: "ATL"},
