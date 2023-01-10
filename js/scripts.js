@@ -5,6 +5,9 @@ let order = document.getElementById("draft-order");
 let teamList = document.getElementById("teams");
 let isPlayoffs = true;
 
+if(isPlayoffs){
+teams = playoffTeams;
+}
 order.innerHTML = '';
 teamList.innerHTML = '';
 
