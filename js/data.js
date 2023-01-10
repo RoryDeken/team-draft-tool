@@ -1,16 +1,17 @@
 managers = [
-	{owner: 'Aidan Guckenberger', team: ''},
-	{owner: 'Milan Puchavich', team: ''},
+	{owner: 'Michael Kish', team: ''},
 	{owner: 'Derek Choops', team: ''},
 	{owner: 'Ricky Brayton', team: ''},
-	{owner: 'Winston Gaynor', team: ''},
-	{owner: 'Sam Martinez', team: ''},
 	{owner: 'Rory Deken', team: ''},
-	{owner: 'Luke Huffer', team: ''},
-	{owner: 'Jake Bedinghaus', team: ''},
-	{owner: 'Michael Kish', team: ''},
 	{owner: 'KC Johnson', team: ''},
-	{owner: 'Evan Guckenberger', team: ''}
+	{owner: 'Winston Gaynor', team: ''},
+	{owner: 'Aidan Guckenberger', team: ''},
+	{owner: 'Evan Guckenberger', team: ''},
+	{owner: 'Milan Puchavich', team: ''},
+	{owner: 'Luke Huffer', team: ''},
+	{owner: 'Sam Martinez', team: ''},
+	{owner: 'Jake Bedinghaus', team: ''},
+
 ];
 
 var playoffTeams = [
