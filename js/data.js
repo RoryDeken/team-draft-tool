@@ -6,7 +6,7 @@ managers = [
 	{owner: 'KC Johnson', team: 'CIN'},
 	{owner: 'Winston Gaynor', team: 'SF'},
 	{owner: 'Aidan Guckenberger', team: 'JAX'},
-	{owner: 'Evan Guckenberger', team: ''},
+	{owner: 'Evan Guckenberger', team: 'DAL'},
 	{owner: 'Milan Puchavich', team: ''},
 	{owner: 'Luke Huffer', team: ''},
 	{owner: 'Sam Martinez', team: ''},
