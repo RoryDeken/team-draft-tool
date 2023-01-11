@@ -9,7 +9,7 @@ managers = [
 	{owner: 'Evan Guckenberger', team: 'DAL'},
 	{owner: 'Milan Puchavich', team: 'MIN'},
 	{owner: 'Luke Huffer', team: 'TB'},
-	{owner: 'Sam Martinez', team: ''},
+	{owner: 'Sam Martinez', team: 'NYG'},
 	{owner: 'Jake Bedinghaus', team: ''},
 
 ];
