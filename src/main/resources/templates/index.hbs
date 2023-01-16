@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Team Draft Tool</title>
-        <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico" />
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">Draft Order</a>
-            </div>
-        </nav>
-        <!-- Page content-->
-        <div class="container">
-            <div class="mt-5">
-                <h1 class="text-center">Team Draft Tool</h1>
-                <h2>Available teams:</h2>
-                <form action="/draft-team" method="post">
-                    <input type="text" placeholder="Team name here" name="team">
-                    <button>Draft</button>
-                </form>
-                <ul id="teams">
-                    <li>If you are seeing this it means you either have javascript disabled or there is a bug with the app.</li>
-                </ul>
-								<h2>Order/Results:</h2>
-								<ol id="draft-order">
-									<li>If you are seeing this it means you either have javascript disabled or there is a bug with the app.</li>
-								</ol>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Team Draft Tool</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+<!-- Responsive navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/">Draft Order</a>
+    </div>
+</nav>
+<!-- Page content-->
+<div class="container pt-5">
+    <h1 class="text-center">Team Draft Tool</h1>
+    <div class="mt-5">
 
-            </div>
-        </div>
-        <!-- Bootstrap core JS-->
-        <!-- Core theme JS-->
-				<script src="js/data.js?cache=false"></script>
-        <script src="js/scripts.js?cache=true"></script>
-    </body>
+        <h2>Available teams: </h2>
+        {{#if team}}<h3> You selected the {{team}} </h3>{{/if}}
+        <ul id="teams">
+            <li>If you are seeing this it means you either have javascript disabled or there is a bug with the app.</li>
+        </ul>
+        <form action="/" method="post">
+            <input type="text" placeholder="Team name here" name="team">
+            <button>Draft</button>
+        </form>
+    </div>
+    <div class="mt-5">
+        <h2>Order/Results:</h2>
+        <ol id="draft-order">
+            <li>If you are seeing this it means you either have javascript disabled or there is a bug with the app.</li>
+        </ol>
+
+    </div>
+</div>
+<!-- Bootstrap core JS-->
+<!-- Core theme JS-->
+<script src="js/data.js?cache=false"></script>
+<script src="js/scripts.js?cache=true"></script>
+</body>
 </html>
