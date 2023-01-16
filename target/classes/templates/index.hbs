@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Draft Tool</title>
+        <title>Team Draft Tool</title>
         <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico" />
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -19,15 +19,20 @@
         <!-- Page content-->
         <div class="container">
             <div class="mt-5">
-                <h1 class="text-center">Arrakis Draft</h1>
+                <h1 class="text-center">Team Draft Tool</h1>
+                <h2>Available teams:</h2>
+                <form action="/draft-team" method="post">
+                    <input type="text" placeholder="Team name here" name="team">
+                    <button>Draft</button>
+                </form>
+                <ul id="teams">
+                    <li>If you are seeing this it means you either have javascript disabled or there is a bug with the app.</li>
+                </ul>
 								<h2>Order/Results:</h2>
 								<ol id="draft-order">
 									<li>If you are seeing this it means you either have javascript disabled or there is a bug with the app.</li>
 								</ol>
-                <h2>Available teams:</h2>
-								<ul id="teams">
-									<li>If you are seeing this it means you either have javascript disabled or there is a bug with the app.</li>
-								</ul>
+
             </div>
         </div>
         <!-- Bootstrap core JS-->
