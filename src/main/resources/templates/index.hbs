@@ -20,15 +20,20 @@
 <div class="container pt-5">
     <h1 class="text-center">Team Draft Tool</h1>
     <div class="mt-5">
-
+        {{#if message}}<h3>That team has already been selected</h3>{{/if}}
         <h2>Available teams: </h2>
-        {{#if team}}<h3> You selected the {{team}} </h3>{{/if}}
+        {{#if team}}
+            <h3> You selected the {{team}} </h3>
+        <p>View <a </p>
+        {{/if}}
+        {{availableTeams}}
         <ul id="teams">
             <li>If you are seeing this it means you either have javascript disabled or there is a bug with the app.</li>
         </ul>
-        <form action="/" method="post">
+        <form action="/team" method="post">
             <input type="text" placeholder="Team name here" name="team">
-            <button>Draft</button>
+            <input type="text" placeholder="Manager name here" name="manager">
+            <button>Draft team</button>
         </form>
     </div>
     <div class="mt-5">
@@ -36,7 +41,7 @@
         <ol id="draft-order">
             <li>If you are seeing this it means you either have javascript disabled or there is a bug with the app.</li>
         </ol>
-
+        {{selectedTeams}}
     </div>
 </div>
 <!-- Bootstrap core JS-->
