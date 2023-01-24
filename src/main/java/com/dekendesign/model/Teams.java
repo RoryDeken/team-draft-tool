@@ -1,4 +1,14 @@
 package com.dekendesign.model;
+
+
+import com.google.gson.Gson;
+
+import com.google.gson.reflect.TypeToken;
+
+
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.*;
 
 public class Teams  {
@@ -50,74 +60,12 @@ public class Teams  {
     }
 
     private void createTeamList(){
-        HashMap team = new HashMap<>();
-        team.put("ARI","Arizona Cardinals");
-        teamList.add(team);
-        team.put( "ATL","Atlanta Falcons");
-        teamList.add(team);
-        team.put("BAL","Baltimore Ravens");
-        teamList.add(team);
-        team.put("BUF", "Buffalo Bills");
-        teamList.add(team);
-        team.put("CAR","Carolina Panthers");
-        teamList.add(team);
-        team.put("CHI","Chicago Bears");
-        teamList.add(team);
-        team.put("CIN","Cincinnati Bengals");
-        teamList.add(team);
-        team.put("CLE","Cleveland Browns");
-        teamList.add(team);
-        team.put("DAL","Dallas Cowboys");
-        teamList.add(team);
-        team.put("DEN", "Denver Broncos");
-        teamList.add(team);
-        team.put("DET", "Detroit Lions");
-        teamList.add(team);
-        team.put("GB", "Green Bay Packers");
-        teamList.add(team);
-        team.put("HOU", "Houston Texans");
-        teamList.add(team);
-        team.put("IND", "Indianapolis Colts");
-        teamList.add(team);
-        team.put("JAX", "Jacksonville Jaguars");
-        teamList.add(team);
-        team.put("KC", "Kansas City Chiefs");
-        teamList.add(team);
-        team.put("LA", "Los Angeles Rams");
-        teamList.add(team);
-        team.put("LAC", "Los Angeles Chargers");
-        teamList.add(team);
-        team.put("LV", "Las Vegas Raiders");
-        teamList.add(team);
-        team.put("MIA", "Miami Dolphins");
-        teamList.add(team);
-        team.put("MIN", "Minnesota Vikings");
-        teamList.add(team);
-        team.put("NE", "New England Patriots");
-        teamList.add(team);
-        team.put("NO", "New Orleans Saints");
-        teamList.add(team);
-        team.put("NYG", "New York Giants");
-        teamList.add(team);
-        team.put("NYJ","New York Jets");
-        teamList.add(team);
-        team.put("PHI", "Philadelphia Eagles");
-        teamList.add(team);
-        team.put("PIT", "Pittsburgh Steelers");
-        teamList.add(team);
-        team.put("SEA","Seattle Seahawks");
-        teamList.add(team);
-        team.put("SF","San Francisco 49ers");
-        teamList.add(team);
-        team.put("TB","Tampa Bay Buccaneers");
-        teamList.add(team);
-        team.put("TEN", "Tennessee Titans");
-        teamList.add(team);
-        team.put("WAS", "Washington Commanders");
-        teamList.add(team);
+
+        // Create an list of maps from nfl_teams.json file
+        // return that list and copy it to available teams
         createAvailableTeamList();
-        System.out.println(teamList.toString());
-        System.out.println(availableTeamList.toString());
+       // System.out.println(teamList.toString());
+       // System.out.println(availableTeamList.toString());
     }
 
     private void createAvailableTeamList(){
