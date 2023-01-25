@@ -1,7 +1,7 @@
 # Team Draft Tool
 This application is for simple team drafting outside of a fantasy football application. If can easily be forked and modified to accomodate a traditional fantasy football draft with a few changes to the model.
 
-This is built using the [Spark](https://sparkjava.com/) micro-framework in Java 8 with a helping hand from a few java packages that are maintained using maven.
+This is built using the [Spark](https://sparkjava.com/) micro-framework in Java 8 with a helping hand from a few java packages that are maintained using maven. Currently nothing is persisted once the application is shut down but connecting to a database can be done simply by leveraging the existing models.
 
 The front end is built using [React](https://reactjs.org/) and consumes the Java API.
 
