@@ -3,7 +3,7 @@ This application is for simple team drafting outside of a fantasy football appli
 
 This is built using the [Spark](https://sparkjava.com/) micro-framework in Java 8 with a helping hand from a few java packages that are maintained using maven. Currently nothing is persisted once the application is shut down but connecting to a database can be done simply by leveraging the existing models.
 
-The front end is built using [React](https://reactjs.org/) and consumes the Java API.
+The front end relies on [Drafty](https://github.com/RoryDeken/drafty) using [React](https://reactjs.org/) and consumes this Java API. Right now a templating engine is used to display the data.
 
 This project uses [Docker](https://www.docker.com/) and [Kubernetes])https://kubernetes.io/) for container management and [CircleCI](https://circleci.com/) for a CI/CD pipeline.
 
