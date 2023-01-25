@@ -18,6 +18,9 @@ This project uses [Docker](https://www.docker.com/) and [Kubernetes])https://kub
 
 This application should now be running on port 3000.
 
+## Player and team data
+Base player and team data is courtesy of [Sleeper](https://docs.sleeper.com/)
+
 
 *This application is currently under development and no stable release has been published.  Check back for progress or fork this to roll your own simple draft tool*
 
