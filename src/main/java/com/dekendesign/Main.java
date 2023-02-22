@@ -19,17 +19,16 @@ public class Main {
         port(8080);
         staticFiles.location("/static");
         Teams teams = new Teams();
-        // Calls for template engine to use/render data
         get("/", (rq, rs) -> {
-            Map<String, String> model = new HashMap<>();
+            Map<String, ArrayList> model = new HashMap<>();
             ArrayList selectedTeamList = teams.getSelectedTeamList();
             ArrayList availableTeamList = teams.getAvailableTeamList();
-            model.put("selectedTeams", String.valueOf(selectedTeamList));
-            model.put("availableTeams", String.valueOf(availableTeamList));
-            if(rq.cookie("message") != "" && rq.cookie("message") != null ) {
+            model.put("selectedTeams", selectedTeamList);
+            model.put("availableTeams", availableTeamList);
+            /*if(rq.cookie("message") != "" && rq.cookie("message") != null ) {
                 String text = rq.cookie("message").replace('-',' ');
                 model.put("message", rq.cookie("message"));
-            }
+            }*/
             return new ModelAndView(model, "index.hbs");
         }, new HandlebarsTemplateEngine());
 

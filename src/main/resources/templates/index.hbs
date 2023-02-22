@@ -29,9 +29,13 @@
             <h3> You selected the {{team}} </h3>
             <p>View <a </p>
         {{/if}}
-        {{availableTeams}}
+
         <ul id="teams">
-            <li>If you are seeing this it means you either have javascript disabled or there is a bug with the app.</li>
+            {{#each availableTeams}}
+
+                <li>{{this.full_name}} <img class="team" src="assets/img/{{this.code}}.png"></li>
+            {{/each}}
+
         </ul>
         <form action="/team" method="post">
             <input type="text" placeholder="Team name here" name="team">
@@ -42,13 +46,19 @@
     <div class="mt-5">
         <h2>Order/Results:</h2>
         <ol id="draft-order">
-            <li>If you are seeing this it means you either have javascript disabled or there is a bug with the app.</li>
-        </ol>
-        {{selectedTeams}}
+            {{#each selectedTeams}}
+
+                <li>{{this.full_name}} <img class="team" src="assets/img/{{this.code}}.png"></li>
+            {{/each}}
+       </ol>
+
     </div>
 </div>
-<!-- Temporary data using JS -->
+<!-- Temporary data using JS
+
 <script src="js/data.js?cache=false"></script>
 <script src="js/scripts.js?cache=true"></script>
+
+-->
 </body>
 </html>
