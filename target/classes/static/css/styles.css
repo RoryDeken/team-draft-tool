@@ -12,6 +12,24 @@ ul li{
 	list-style:none;
 	padding: 25px;
 }
+ul li label {
+cursor:pointer;
+border:4px solid transparent;
+border-radius: 4px;
+}
+ul li label:hover {
+background:#000;
+color:#FFF;
+}
+
+
+ul li input {
+display:none;
+}
+ul li input:checked + label {
+background:#000;
+color:#FFF;
+}
 
 .team {
 	width:50px;

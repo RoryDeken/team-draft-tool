@@ -7,11 +7,87 @@ public class Teams  {
 
     private ArrayList<HashMap> teamList = new ArrayList();
 
-    private ArrayList selectedTeamList = new ArrayList();
+    private ArrayList<HashMap> selectedTeamList = new ArrayList();
 
     private ArrayList availableTeamList = new ArrayList();
 
     public Teams(){
+
+/*
+
+        {owner: '', team: 'PHI'},
+        {owner: 'Rory Deken', team: 'LAC'},
+        {owner: 'KC Johnson', team: 'CIN'},
+        {owner: 'Winston Gaynor', team: 'SF'},
+        {owner: 'Aidan Guckenberger', team: 'JAX'},
+        {owner: 'Evan Guckenberger', team: 'DAL'},
+        {owner: 'Milan Puchavich', team: 'MIN'},
+        {owner: 'Luke Huffer', team: 'TB'},
+        {owner: 'Sam Martinez', team: 'NYG'},
+        {owner: 'Jake Bedinghaus', team: 'SEA'},
+*/
+        HashMap<String, String> manager = new HashMap<String, String>();
+        manager.put("manager", "Michael Kish");
+        manager.put("team","");
+        selectedTeamList.add(manager);
+
+        manager = new HashMap<String, String>();
+        manager.put("manager", "Derek Choops");
+        manager.put("team","");
+        selectedTeamList.add(manager);
+
+        manager = new HashMap<String, String>();
+        manager.put("manager", "Ricky Brayton");
+        manager.put("team","");
+        selectedTeamList.add(manager);
+
+        manager = new HashMap<String, String>();
+        manager.put("manager", "Rory Deken");
+        manager.put("team","");
+        selectedTeamList.add(manager);
+
+        manager = new HashMap<String, String>();
+        manager.put("manager", "KC Johnson");
+        manager.put("team","");
+        selectedTeamList.add(manager);
+
+        manager = new HashMap<String, String>();
+        manager.put("manager", "Winston Gaynor");
+        manager.put("team","");
+        selectedTeamList.add(manager);
+
+        manager = new HashMap<String, String>();
+        manager.put("manager", "Aidan Guckenberger");
+        manager.put("team","");
+        selectedTeamList.add(manager);
+
+        manager = new HashMap<String, String>();
+        manager.put("manager", "Evan Guckenberger");
+        manager.put("team","");
+        selectedTeamList.add(manager);
+
+        manager = new HashMap<String, String>();
+        manager.put("manager", "Milan Puchavich");
+        manager.put("team","");
+        selectedTeamList.add(manager);
+
+        manager = new HashMap<String, String>();
+        manager.put("manager", "Luke Huffer");
+        manager.put("team","");
+        selectedTeamList.add(manager);
+
+        manager = new HashMap<String, String>();
+        manager.put("manager", "Sam Martinez");
+        manager.put("team","");
+        selectedTeamList.add(manager);
+
+        manager = new HashMap<String, String>();
+        manager.put("manager", "Jake Bedinghaus");
+        manager.put("team","");
+        selectedTeamList.add(manager);
+
+
+
 
         HashMap<String, String> team = new HashMap<String, String>();
         team.put("code", "ARI");
@@ -158,6 +234,14 @@ public class Teams  {
         teamList.add(team);
 
         team = new HashMap<String, String>();
+        team.put("code", "LV");
+        team.put("name", "Raiders");
+        team.put("full_name", "Las Vegas Raiders");
+        team.put("conf", "AFC");
+        team.put("region", "West");
+        teamList.add(team);
+
+        team = new HashMap<String, String>();
         team.put("code", "MIA");
         team.put("name", "Dolphins");
         team.put("full_name", "Miami Dolphins");
@@ -203,14 +287,6 @@ public class Teams  {
         team.put("full_name", "New York Jets");
         team.put("conf", "AFC");
         team.put("region", "East");
-        teamList.add(team);
-
-        team = new HashMap<String, String>();
-        team.put("code", "OAK");
-        team.put("name", "Raiders");
-        team.put("full_name", "Oakland Raiders");
-        team.put("conf", "AFC");
-        team.put("region", "West");
         teamList.add(team);
 
         team = new HashMap<String, String>();
@@ -260,7 +336,6 @@ public class Teams  {
         team.put("conf", "NFC");
         team.put("region", "East");
         teamList.add(team);
-
         createTeamList();
     }
 
@@ -270,9 +345,24 @@ public class Teams  {
 
     public boolean updateSelectedTeamList(String team, String manager) {
         HashMap selectedTeam = new HashMap();
+        HashMap<String, String> updated = new HashMap<String, String>();
         if(isTeamAvailable(team)) {
-            selectedTeam.put(manager, team);
-            selectedTeamList.add(selectedTeam);
+            for (int i =0; i<selectedTeamList.size();i++)
+            {
+                HashMap<String, String> data = (HashMap<String, String>) selectedTeamList.get(i);
+                Set<String> key = data.keySet();
+                Iterator it = key.iterator();
+                while (it.hasNext()) {
+                    String iKey = (String)it.next();
+                    String iData = (String) data.get(iKey);
+                    if(iData.equals(manager)){
+                        updated = new HashMap<String, String>();
+                        updated.put("manager", manager);
+                        updated.put("team",team);
+                        selectedTeamList.set(i,updated);
+                    }
+                }
+            }
             removeFromAvailableTeamList(team);
             return true;
         }else {
@@ -291,7 +381,7 @@ public class Teams  {
             while (it.hasNext()) {
                 String iKey = (String)it.next();
                 String iData = (String) data.get(iKey);
-                if(iKey.equals(team)){
+                if(iData.equals(team)){
                     availableTeamList.remove(i);
                 }
             }
@@ -327,7 +417,6 @@ public class Teams  {
             while (it.hasNext()) {
                 String iKey = (String)it.next();
                 String iData = (String) data.get(iKey);
-                System.out.println("Data: "+iKey +" Key: "+iData);
                 if(iData.equals(team)){
                     isAvailable = false;
                     System.out.println("Team has already been selected");

@@ -20,38 +20,36 @@
     </div>
 </nav>
 <!-- Page content-->
-<div class="container pt-5">
+<div class="container py-5 my-5">
     <h1 class="text-center">Team Draft Tool</h1>
     <div class="mt-5">
         {{#if message}}<h3>That team has already been selected</h3>{{/if}}
+        <div class="my-5 py-5">
+            <h2>Draft Order/Results:</h2>
+            <ol id="draft-order">
+                {{#each selectedTeams}}
+                    <li>{{this.manager}} {{#if this.team}}<img class="team" src="assets/img/{{this.team}}.png">{{/if}}</li>
+                {{/each}}
+            </ol>
+
+        </div>
         <h2>Available teams: </h2>
         {{#if team}}
             <h3> You selected the {{team}} </h3>
             <p>View <a </p>
         {{/if}}
 
+        <form action="/team" method="post">
         <ul id="teams">
             {{#each availableTeams}}
 
-                <li>{{this.full_name}} <img class="team" src="assets/img/{{this.code}}.png"></li>
+                <li><input type="radio" id="{{this.code}}" placeholder="Team name here" name="team" value="{{this.code}}"><label for="{{this.code}}">{{this.full_name}}<img class="team" src="assets/img/{{this.code}}.png"></label></li>
             {{/each}}
 
         </ul>
-        <form action="/team" method="post">
-            <input type="text" placeholder="Team name here" name="team">
             <input type="text" placeholder="Manager name here" name="manager">
             <button>Draft team</button>
         </form>
-    </div>
-    <div class="mt-5">
-        <h2>Order/Results:</h2>
-        <ol id="draft-order">
-            {{#each selectedTeams}}
-
-                <li>{{this.full_name}} <img class="team" src="assets/img/{{this.code}}.png"></li>
-            {{/each}}
-       </ol>
-
     </div>
 </div>
 <!-- Temporary data using JS
