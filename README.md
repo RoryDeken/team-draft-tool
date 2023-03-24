@@ -22,6 +22,8 @@ This application should now be running on port 3000.
 Base player and team data is courtesy of [Sleeper](https://docs.sleeper.com/)
 
 
+#Rewrite in Spring
+
 *This application is currently under development and no stable release has been published.  Check back for progress or fork this to roll your own simple draft tool*
 
 
